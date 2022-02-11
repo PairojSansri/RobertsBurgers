@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberts Burgers</title>
+    <link rel="stylesheet" href="./resources/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Order</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Tina's Journal</li>
+        </ul>
+    </nav>
+    <form action="orderComplete.html" method="POST">
+        <h1>Today's Menu</h1>
+        <section class="burgerType">
+            <div class="card">
+                <label for="CauliCumin">
+                    <h4>The Cauliflower's Cumin From Inside the House Burger</h4>
+                    <p><i>w/ cauliflower and cumin</i></p>
+                </label>
+                <input type="radio" name="burger" id="CauliCumin">
+            </div>
+            <div class="card">
+                <label for="Hamsey">
+                    <h4>Gordon-Hamsey Burger</h4>
+                    <p><i>w/ squash & ham</i></p>
+                </label>
+                <input type="radio" name="burger" id="Hamsey">
+            </div>
+            <div class="card">
+                <label for="Silentil">
+                    <h4>The Silentil Night Burger</h4>
+                    <p><i>w/ lentils</i></p>
+                </label>
+                <input type="radio" name="burger" id="Silentil">
+            </div>
+            <div class="card">
+                <label for="Poutine">
+                    <h4>Poutine on the Ritz Burger</h4>
+                    <p><i>w/poutine fries</i></p>
+                </label>
+                <input type="radio" name="burger" id="Poutine">
+            </div>
+            <div class="card">
+                <label for="Picasso">
+                    <h4>Ponlano Picaso Burger</h4>
+                    <p><i>w/ poutine fries</i></p>
+                </label>
+                <input type="radio" name="burger" id="picasso">
+            </div>
+            <div class="card">
+                <label for="eggers">
+                    <h4>Eggers can't be Cheesers</h4>
+                    <p><i>w/ fried egg & cheese</i></p>
+                </label>
+                <input type="radio" name="burger" id="eggers">
+            </div>
+            <div class="card">
+                <label for="burden">
+                    <h4><strong>Burger of the Day:</strong> Beets of a Burden</h4>
+                    <p><i>served with too many beets (shipment error, thanks for understanding)</i></p>
+                </label>
+                <input type="radio" name="burger" id="burden">
+            </div>
+            <div class="card">
+                <label for="fif">
+                    <h4>Fifth Day of Christmas Burger</h4>
+                    <p><i>w/ five (5) golden rings of onion</i></p>
+                </label>
+                <input type="radio" name="burger" id="fif">
+            </div>
+            <div class="card">
+                <label for="relleno">
+                    <h4>Chile Relleno-You-Didn't Burger</h4>
+                    <p><i>w/ chile rellenos</i></p>
+                </label>
+                <input type="radio" name="burger" id="relleno">
+            </div>
+            <div class="card">
+                <label for="polenta">
+                    <h4>The Human Polenta-pede Burger</h4>
+                    <p><i>w/ toasted polenta buns (no humans)</i></p>
+                </label>
+                <input type="radio" name="burger" id="polenta">
+            </div>
+        </section>
+        <hr>
+        <h3>Add-ons</h3>
+        <section class="adds">
+            <div class="addOpt">
+                <label for="penos">
+                    <p>Jalepenos</p>
+                </label>
+                <input type="checkbox" name="extras" id="penos">
+            </div>
+            <div class="addOpt">
+                <label for="swiss">
+                    <p>Swiss Cheese</p>
+                </label>
+                <input type="checkbox" name="extras" id="swiss">
+            </div>
+            <div class="addOpt">
+                <label for="bGarlic">
+                    <p>Black Garlic</p>
+                </label>
+                <input type="checkbox" name="extras" id="bGarlic">
+            </div>
+            <div class="addOpt">
+                <label for="pickles">
+                    <p>Pickles</p>
+                </label>
+                <input type="checkbox" name="extras" id="pickles">
+            </div>
+            <div class="addOpt">
+                <label for="bacon">
+                    <p>Bacon</p>
+                </label>
+                <input type="checkbox" name="extras" id="bacon">
+            </div>
+            <div class="addOpt">
+                <label for="egg">
+                    <p>Egg</p>
+                </label>
+                <input type="checkbox" name="extras" id="egg">
+            </div>
+            <div class="addOpt">
+                <label for="Beets">
+                    <p>Beets</p>
+                </label>
+                <input type="checkbox" name="extras" id="Beets">
+            </div>
+            <div class="addOpt">
+                <label for="country">
+                    <p>Country-Fried chicken breast</p>
+                </label>
+                <input type="checkbox" name="extras" id="country">
+            </div>
+        </section>
+        <section class="sideDishes">
+            <div class="sideDishesimg">
+                <img src="#" alt="hello">
+            </div>
+            <div class="sideDishesRight">
+                <label for="sides">
+                    <h3>Sides</h3>
+                </label>
+                <select name="sides" id="sides">
+                    <option value="waffles">Waffle Fries</option>
+                    <option value="curly">Curly Fries</option>
+                    <option value="onion">Onion Rings</option>
+                    <option value="asparagus">Aspargus Spears</option>
+                </select>
+            </div>
+        </section>
+        <section class="notes">
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" rows="10" cols="40"></textarea>
+            <div class="button">
+                <input type="button" value="Complete Order">
+            </div>
+        </section>
+    </form>
+</body>
+
+</html>
