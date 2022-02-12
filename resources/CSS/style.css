@@ -2,6 +2,9 @@ body {
     width: 100%;
     font-family: 'Spectral', serif;
     background-image: linear-gradient(to bottom, white, black, 0.7);
+    background-color: #F4E124;
+    color: #EB1B30;
+    font-size: 11px;
 }
 
 
@@ -21,6 +24,7 @@ form {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
+    font-family: 'Fredericka the Great', cursive;
 }
 
 h3 {
@@ -36,37 +40,59 @@ form h1 {
 .burgertype {
     align-content: center;
     justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+    height: 25vh;
+    overflow: scroll;
 }
 
 .burgertype .card{
     box-sizing: content-box;
-    width: 80%;
+    width: 70%;
     flex-wrap: wrap;
     padding: 0.5rem;
-    margin: auto;
-    background-color: #F4E124;
-    color: #EB1830;
-    border: 1px solid black;
+    margin: 1rem auto;
+    background-color: #777B84;
+    color: #F6F8F7;
+    border: 0.5rem solid #CB474F;
     border-radius: 10px;
-    box-shadow: 4px 4px #EB1B30;
+    box-shadow: -1rem 2rem 3rem #9D464C;
+    font-family: 'Fredericka the Great', cursive;
+    justify-content: center;
+}
+
+form h1, form h4, form h3 {
+    font-family: 'Rock Salt', cursive;
+}
+
+form p {
+    font-size: larger;
 }
 
 .adds {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 .addOpt {
-    flex-direction: row;
+    display: inline-flex;
     width: 35%;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #CBCDC2;
+    border: 0.5rem solid #667593;
+    box-shadow: 0.25rem 0.25rem #706B80;
 }
 
 .notes {
-    margin: auto;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 .button input {
@@ -92,18 +118,37 @@ form h1 {
     }
 
     .burgertype {
-        display: inline-flex;
-        flex-wrap: wrap;
-        width: 100%;
+        display: flex;
+        width: 25%;
         height: auto;
         justify-content: space-around;
+        overflow-x: scroll;
+    }
+
+    .burgertype::-webkit-scrollbar {
+        width: 0.75rem;
+        height: 0.75rem
+    }
+    
+    .burgertype::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 10px;
+    }
+
+    .burgertype::-webkit-scrollbar-track {
+        background-color: #EB1B30;
     }
 
     .burgertype .card {
         box-sizing: content-box;
-        width: 12.5%;
+        width: 100%;
         margin: 2rem;
         padding: 1rem;
+    }
+
+    .burgertype .card:hover {
+        transform: translateY(-1rem);
+        transition: ease 400ms;
     }
 
     .adds {
