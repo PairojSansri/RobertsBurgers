@@ -21,18 +21,20 @@
 
 <body>
     <nav>
-        <ul>
-            <li>Order</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Tina's Journal</li>
-        </ul>
+        <div class="nav-wrapper">
+            <ul>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tina's Journal</a></li>
+            </ul>
+        </div>
     </nav>
     <form action="orderComplete.html" method="POST">
         <h1>Today's Menu</h1>
         <section class="burgerType">
             <div class="card">
                 <label for="CauliCumin">
+                    <img src="./resources/images/Double-burger.jpeg" alt="">
                     <h4>The Cauliflower's Cumin From Inside the House Burger</h4>
                     <p><i>w/ cauliflower and cumin</i></p>
                 </label>
@@ -40,6 +42,7 @@
             </div>
             <div class="card">
                 <label for="Hamsey">
+                    <img src="./resources/images/Spotlight-burger.jpeg" alt="">
                     <h4>Gordon-Hamsey Burger</h4>
                     <p><i>w/ squash & ham</i></p>
                 </label>
@@ -47,6 +50,7 @@
             </div>
             <div class="card">
                 <label for="Silentil">
+                    <img src="./resources/images/shiny-burger.jpeg" alt="">
                     <h4>The Silentil Night Burger</h4>
                     <p><i>w/ lentils</i></p>
                 </label>
@@ -61,6 +65,7 @@
             </div>
             <div class="card">
                 <label for="Picasso">
+                    <img src="./resources/images/Burger-profile.jpeg" alt="">
                     <h4>Ponlano Picaso Burger</h4>
                     <p><i>w/ poutine fries</i></p>
                 </label>
@@ -68,6 +73,7 @@
             </div>
             <div class="card">
                 <label for="eggers">
+                    <img src="./resources/images/Cheesy-burger.jpeg" alt="">
                     <h4>Eggers can't be Cheesers</h4>
                     <p><i>w/ fried egg & cheese</i></p>
                 </label>
@@ -103,7 +109,7 @@
             </div>
         </section>
         <hr>
-        <h3>Add-ons</h3>
+        <h2>Add-ons</h2>
         <section class="adds">
             <div class="addOpt">
                 <label for="penos">
@@ -154,13 +160,10 @@
                 <input type="checkbox" name="extras" id="country">
             </div>
         </section>
-        <section class="sideDishes">
-            <div class="sideDishesimg">
-                <img src="#" alt="hello">
-            </div>
-            <div class="sideDishesRight">
+        <section>
+            <div class="sideDishes">
                 <label for="sides">
-                    <h3>Sides</h3>
+                    <h2>Sides</h2>
                 </label>
                 <select name="sides" id="sides">
                     <option value="waffles">Waffle Fries</option>
@@ -172,8 +175,11 @@
         </section>
         <section>
             <div class="notes">
-                <label for="comments">Comments</label>
-                <textarea name="comments" id="comments" rows="10" cols="40"></textarea>
+                <label for="comments">
+                    <h2>Comments</h2>
+                </label>
+                <textarea name="comments" id="comments" rows="10" cols="40"
+                    placeholder="Any comments or requests?"></textarea>
                 <div class="button">
                     <input type="button" value="Complete Order">
                 </div>

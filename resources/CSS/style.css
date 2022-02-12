@@ -1,30 +1,42 @@
 body {
     width: 100%;
     font-family: 'Spectral', serif;
-    background-image: linear-gradient(to bottom, white, black, 0.7);
     background-color: #F4E124;
-    color: #EB1B30;
+    color: #CB474F;
     font-size: 11px;
 }
 
+nav {
+    display: inline-flex;
+    width: 100%;
+}
 
 nav ul {
     display: inline-flex;
     list-style: none;
-    width: 100%;
-    align-items: center;
+    font-family: 'Rock Salt';
 }
 
 nav li {
-    justify-content: space-around;
-    margin: 0.5rem 1rem;
+    margin: 1rem;
+    display: inline-flex;
+}
+
+nav li a{
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #CB474F;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
 }
 
 form {
     display: inline-flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     font-family: 'Fredericka the Great', cursive;
+    justify-content: center;
 }
 
 h3 {
@@ -42,13 +54,22 @@ form h1 {
     justify-content: space-around;
     margin: auto;
     flex-wrap: wrap;
+    width: 95%;;
     height: 25vh;
     overflow: scroll;
+    background-image: url("../images/hero2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: -1rem 2rem 3rem black;
+    justify-content: center;
 }
 
 .burgertype .card{
+    display: inline-flex;
+    flex-direction: column;
     box-sizing: content-box;
-    width: 70%;
+    width: 80%;
     flex-wrap: wrap;
     padding: 0.5rem;
     margin: 1rem auto;
@@ -56,17 +77,35 @@ form h1 {
     color: #F6F8F7;
     border: 0.5rem solid #CB474F;
     border-radius: 10px;
-    box-shadow: -1rem 2rem 3rem #9D464C;
     font-family: 'Fredericka the Great', cursive;
+    align-items: center;
     justify-content: center;
 }
 
-form h1, form h4, form h3 {
+.card img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+form h1, form h4, form h2{
     font-family: 'Rock Salt', cursive;
+    align-self: center;
 }
 
 form p {
     font-size: larger;
+}
+
+.sideDishes {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 25px 0px;
+    padding: 10px;
+    align-items: center;
+   
 }
 
 .adds {
@@ -75,17 +114,19 @@ form p {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    height: 9vh;
+    width: 50%;
+    overflow: scroll;
 }
 
 .addOpt {
     display: inline-flex;
-    width: 35%;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
     background-color: #CBCDC2;
     border: 0.5rem solid #667593;
-    box-shadow: 0.25rem 0.25rem #706B80;
+    box-shadow: -0.25rem -0.25rem 0.25rem #706B80;
+    margin: 5px;
 }
 
 .notes {
@@ -102,15 +143,32 @@ form p {
 @media only screen and (min-width: 1024px) {
 
     body {
+        display: block;
         width: 100%;
+        font-size: 14px;
+    }
+
+    nav {
+        position: fixed;
+        width: 10%;
+        height: 100vh;
+    }
+
+    .nav-wrapper {
+        display: inline-flex;
     }
 
     nav ul {
         display: inline-flex;
-        justify-content: space-around;
+        flex-direction: column;
         list-style: none;
         width: 100%;
+        scrollbar-base-color: transparent;
     }
+    nav li {
+        display: inline-flex;
+        height: 100%;
+}
 
     form {
         display: inline-flex;
@@ -118,11 +176,13 @@ form p {
     }
 
     .burgertype {
-        display: flex;
-        width: 25%;
-        height: auto;
-        justify-content: space-around;
-        overflow-x: scroll;
+        display: inline-flex;
+        width: 45%;
+        height: 70vh;
+        overflow-y: scroll;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     .burgertype::-webkit-scrollbar {
@@ -130,25 +190,33 @@ form p {
         height: 0.75rem
     }
     
-    .burgertype::-webkit-scrollbar-thumb {
+    .burgertype::-webkit-scrollbar-base-color: transparent;scrollbar-base-color: transparent;bar-thumb {
         background: black;
         border-radius: 10px;
     }
 
     .burgertype::-webkit-scrollbar-track {
-        background-color: #EB1B30;
+        background-color: transparent;
     }
 
     .burgertype .card {
-        box-sizing: content-box;
-        width: 100%;
-        margin: 2rem;
-        padding: 1rem;
+        display: sticky;
+        box-sizing: border-box;
+        width: 90%;
+        margin: 2rem 0.5rem;
     }
 
     .burgertype .card:hover {
         transform: translateY(-1rem);
         transition: ease 400ms;
+    }
+
+    .card img {
+        width: auto;
+        height: 70%;
+        align-self: center;
+        border-radius: 10px;
+        margin: 2rem;
     }
 
     .adds {
